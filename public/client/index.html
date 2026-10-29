@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALS Traveling System | Explore Without Limits</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="header-glass">
+        <div class="container header-nav">
+            <!-- Brand Logo -->
+            <a href="index.html" class="header-logo">
+                <i class="ph-fill ph-compass"></i>
+                <span>ALS<span class="brand-light">Travel</span></span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="travel.html" class="nav-link">Travel</a>
+                <a href="packages.html" class="nav-link">Packages</a>
+                <a href="about.html" class="nav-link">About Us</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="nav-actions">
+                <button class="btn-nav-user" aria-label="User Profile">
+                    <i class="ph ph-user"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-bg">
+                <img src="../assets/images/hero-bg.jpg" alt="Tropical Island View" class="hero-bg-img" />
+                <div class="hero-overlay-gradient"></div>
+                <div class="hero-overlay-dark"></div>
+            </div>
+
+            <div class="hero-content">
+                <span class="hero-title-top text-glow">Explore without</span>
+                <h1 class="hero-title-main">LIMITS</h1>
+                <p class="hero-subtitle text-glow">
+                    Palawan, Siargao and Boracay? <strong>We got it.</strong>
+                </p>
+
+                <button class="btn-hero-cta">
+                    Start Your Journey
+                    <i class="ph-bold ph-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="hero-scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="ph ph-caret-down"></i>
+            </div>
+        </section>
+
+        <!-- Mode of Transportation Section -->
+        <section id="transportation" class="transport-section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="section-badge">How will you travel?</span>
+                        <h2 class="section-title">Mode of Transportation</h2>
+                    </div>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="transport-grid">
+                    <!-- Air Card -->
+                    <div class="transport-card">
+                        <img src="../assets/images/transport-air.jpg" alt="Air Travel" class="transport-card-img" />
+                        <div class="transport-card-overlay"></div>
+                        <div class="transport-card-content">
+                            <div class="transport-card-body">
+                                <h3 class="transport-card-title">AIR</h3>
+                                <p class="transport-card-desc">Reach your destination swiftly with our premium airline partners.</p>
+                                <a href="packages.html" class="btn-transport">Explore Flights</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Land Card -->
+                    <div class="transport-card">
+                        <img src="../assets/images/transport-land.jpg" alt="Land Travel" class="transport-card-img" />
+                        <div class="transport-card-overlay"></div>
+                        <div class="transport-card-content">
+                            <div class="transport-card-body">
+                                <h3 class="transport-card-title">LAND</h3>
+                                <p class="transport-card-desc">Experience the scenic routes with our comfortable land transit.</p>
+                                <a href="packages.html" class="btn-transport">Explore Routes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sea Card -->
+                    <div class="transport-card">
+                        <img src="../assets/images/transport-sea.jpg" alt="Sea Travel" class="transport-card-img" />
+                        <div class="transport-card-overlay"></div>
+                        <div class="transport-card-content">
+                            <div class="transport-card-body">
+                                <h3 class="transport-card-title">SEA</h3>
+                                <p class="transport-card-desc">Sail into the sunset with luxurious cruises and island hopping.</p>
+                                <a href="packages.html" class="btn-transport">Explore Voyages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Places Section -->
+        <section id="destinations" class="destinations-section">
+            <div class="destinations-blur-bg"></div>
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="section-badge">Curated for you</span>
+                        <h2 class="section-title">Recommended Places</h2>
+                    </div>
+                    <div class="dest-carousel-controls">
+                        <button id="dest-scroll-left" aria-label="Scroll left" class="btn-carousel">
+                            <i class="ph-bold ph-arrow-left"></i>
+                        </button>
+                        <button id="dest-scroll-right" aria-label="Scroll right" class="btn-carousel">
+                            <i class="ph-bold ph-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div id="dest-scroll-container" class="dest-scroll-container scrollbar-hide">
+                    <!-- Destination 1: Palawan -->
+                    <div class="dest-card">
+                        <img src="../assets/images/dest-palawan.jpg" alt="Palawan" class="dest-card-img" />
+                        <div class="dest-card-overlay"></div>
+                        <div class="dest-card-content">
+                            <h3 class="dest-card-title">Palawan</h3>
+                            <div class="dest-card-location">
+                                <i class="ph-fill ph-map-pin"></i> Philippines
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Destination 2: Siargao -->
+                    <div class="dest-card">
+                        <img src="../assets/images/dest-siargao.jpg" alt="Siargao" class="dest-card-img" />
+                        <div class="dest-card-overlay"></div>
+                        <div class="dest-card-content">
+                            <h3 class="dest-card-title">Siargao</h3>
+                            <div class="dest-card-location">
+                                <i class="ph-fill ph-map-pin"></i> Philippines
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Destination 3: Boracay -->
+                    <div class="dest-card">
+                        <img src="../assets/images/dest-boracay.jpg" alt="Boracay" class="dest-card-img" />
+                        <div class="dest-card-overlay"></div>
+                        <div class="dest-card-content">
+                            <h3 class="dest-card-title">Boracay</h3>
+                            <div class="dest-card-location">
+                                <i class="ph-fill ph-map-pin"></i> Philippines
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Destination 4: Cebu -->
+                    <div class="dest-card">
+                        <img src="../assets/images/dest-cebu.jpg" alt="Cebu" class="dest-card-img" />
+                        <div class="dest-card-overlay"></div>
+                        <div class="dest-card-content">
+                            <h3 class="dest-card-title">Cebu</h3>
+                            <div class="dest-card-location">
+                                <i class="ph-fill ph-map-pin"></i> Philippines
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Destination 5: Vigan -->
+                    <div class="dest-card">
+                        <img src="../assets/images/dest-vigan.jpg" alt="Vigan" class="dest-card-img" />
+                        <div class="dest-card-overlay"></div>
+                        <div class="dest-card-content">
+                            <h3 class="dest-card-title">Vigan</h3>
+                            <div class="dest-card-location">
+                                <i class="ph-fill ph-map-pin"></i> Philippines
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer-section">
+        <div class="footer-pattern"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="ph-fill ph-compass"></i>
+                        <span>ALS<span class="brand-light">Travel</span></span>
+                    </a>
+                    <p>Your ultimate gateway to seamless travel adventures across Air, Land, and Sea. We craft unforgettable journeys tailored just for you.</p>
+                    <div class="footer-social-links">
+                        <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Twitter"><i class="ph-fill ph-x-logo"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="travel.html">Travel</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#footer">Contact Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Get in Touch</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="ph-fill ph-envelope-simple"></i>
+                            <a href="mailto:hello@alstravel.com">hello@alstravel.com</a>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-phone"></i>
+                            <a href="tel:+1234567890">+1 (234) 567 890</a>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-map-pin"></i>
+                            <span>123 Horizon Avenue, Suite 400<br>Travel District, TD 90210</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 ALS Traveling System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Client Script -->
+    <script src="../../src/js/client/main.js" defer></script>
+</body>
+</html>

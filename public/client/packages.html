@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages | ALS Traveling System</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="header-solid">
+        <div class="container header-nav">
+            <!-- Brand Logo -->
+            <a href="index.html" class="header-logo">
+                <i class="ph-fill ph-compass"></i>
+                <span>ALS<span class="brand-light">Travel</span></span>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="travel.html" class="nav-link">Travel</a>
+                <a href="packages.html" class="nav-link active">Packages</a>
+                <a href="about.html" class="nav-link">About Us</a>
+            </nav>
+
+            <!-- Action Buttons -->
+            <div class="nav-actions">
+                <button class="btn-nav-user" aria-label="User Profile">
+                    <i class="ph ph-user"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Packages Banner / Hero -->
+        <section class="packages-hero">
+            <div class="container">
+                <div class="packages-breadcrumb">Travel / Air</div>
+                
+                <div class="packages-hero-header">
+                    <div>
+                        <h1 class="packages-hero-title">Air Travel Destinations</h1>
+                        <p class="packages-hero-desc">Find your destination and start planning your journey.</p>
+                    </div>
+
+                    <!-- Search Input -->
+                    <div class="packages-search-box">
+                        <input type="text" placeholder="Search destinations..." class="packages-search-input" />
+                        <i class="ph ph-magnifying-glass" style="color: var(--brand-blue); opacity: 0.6; font-size: 1.15rem;"></i>
+                    </div>
+                </div>
+
+                <!-- Filter Tabs -->
+                <div class="packages-filter-tabs">
+                    <button class="filter-tab filter-tab-active" data-mode="air">Air</button>
+                    <button class="filter-tab filter-tab-inactive" data-mode="land">Land</button>
+                    <button class="filter-tab filter-tab-inactive" data-mode="sea">Sea</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Places We Offer Section -->
+        <section class="packages-section">
+            <div class="container">
+                <div class="packages-header">
+                    <h2 class="packages-title">Places we offer</h2>
+                    <span class="packages-count">3 destinations</span>
+                </div>
+
+                <!-- Destination Cards Grid -->
+                <div class="packages-grid">
+                    <!-- AIR 1: El Nido -->
+                    <article class="package-card" data-category="air">
+                        <img src="../assets/images/dest-palawan.jpg" alt="El Nido, Palawan" class="package-card-img" />
+                        <div class="package-card-body">
+                            <div>
+                                <h3 class="package-card-title">El Nido, Palawan</h3>
+                                <p class="package-card-desc">
+                                    Dramatic limestone cliffs, white sand beaches and turquoise waters. Discover hidden lagoons, secret coves and vibrant coral reefs on an island hopping escape.
+                                </p>
+                            </div>
+                            <div>
+                                <button class="btn-package-book">Book Now!</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AIR 2: Boracay -->
+                    <article class="package-card" data-category="air">
+                        <img src="../assets/images/dest-boracay.jpg" alt="Boracay" class="package-card-img" />
+                        <div class="package-card-body">
+                            <div>
+                                <h3 class="package-card-title">Boracay</h3>
+                                <p class="package-card-desc">
+                                    Powdery white sand beaches, azure waters and vibrant nightlife. A compact tropical escape that brings together coastal beauty and lively island experiences.
+                                </p>
+                            </div>
+                            <div>
+                                <button class="btn-package-book">Book Now!</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AIR 3: Siargao Island -->
+                    <article class="package-card" data-category="air">
+                        <img src="../assets/images/dest-siargao.jpg" alt="Siargao Island" class="package-card-img" />
+                        <div class="package-card-body">
+                            <div>
+                                <h3 class="package-card-title">Siargao Island</h3>
+                                <p class="package-card-desc">
+                                    The Philippines' surfing capital, with palm forests, tidal rock pools and world-class surf breaks. Experience laid back island culture and rich natural ecosystems.
+                                </p>
+                            </div>
+                            <div>
+                                <button class="btn-package-book">Book Now!</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- LAND 1: Vigan, Ilocos Sur -->
+                    <article class="package-card hidden" data-category="land">
+                        <img src="../assets/images/dest-vigan.jpg" alt="Vigan, Ilocos Sur" class="package-card-img" />
+                        <div class="package-card-body">
+                            <div>
+                                <h3 class="package-card-title">Vigan, Ilocos Sur</h3>
+                                <p class="package-card-desc">
+                                    Walk along historic Calle Crisologo, admiring century old Spanish colonial architecture, cobblestone avenues, and traditional horse drawn kalesas.
+                                </p>
+                            </div>
+                            <div>
+                                <button class="btn-package-book">Book Now!</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- LAND 2: Banaue Rice Terraces -->
+                    <article class="package-card hidden" data-category="land">
+                        <img src="../assets/images/dest-cebu.jpg" alt="Banaue Rice Terraces" class="package-card-img" />
+                        <div class="package-card-body">
+                            <div>
+                                <h3 class="package-card-title">Banaue Rice Terraces</h3>
+                                <p class="package-card-desc">
+                                    Hand carved into the mountains by indigenous ancestors thousands of years ago, these awe inspiring terraces showcase scenic mountain trekking and living heritage.
+                                </p>
+                            </div>
+                            <div>
+                                <button class="btn-package-book">Book Now!</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- LAND 3: Mayon Volcano, Albay -->
+                    <article class="package-card hidden" data-category="land">
+                        <img src="../assets/images/hero-bg.jpg" alt="Mayon Volcano, Albay" class="package-card-img" />
+                        <div class="package-card-body">
+                            <div>
+                                <h3 class="package-card-title">Mayon Volcano, Albay</h3>
+                                <p class="package-card-desc">
+                                    Embark on scenic ATV road adventures through volcanic trails and black lava walls while admiring the world famous symmetrical cone of Mount Mayon.
+                                </p>
+                            </div>
+                            <div>
+                                <button class="btn-package-book">Book Now!</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SEA 1: Coron, Palawan -->
+                    <article class="package-card hidden" data-category="sea">
+                        <img src="../assets/images/dest-palawan.jpg" alt="Coron, Palawan" class="package-card-img" />
+                        <div class="package-card-body">
+                            <div>
+                                <h3 class="package-card-title">Coron, Palawan</h3>
+                                <p class="package-card-desc">
+                                    Sail across mirror like freshwater lakes, snorkel through sunken World War shipwrecks, and cruise through majestic limestone sea karsts and hidden coves.
+                                </p>
+                            </div>
+                            <div>
+                                <button class="btn-package-book">Book Now!</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SEA 2: Apo Reef, Mindoro -->
+                    <article class="package-card hidden" data-category="sea">
+                        <img src="../assets/images/dest-siargao.jpg" alt="Apo Reef, Mindoro" class="package-card-img" />
+                        <div class="package-card-body">
+                            <div>
+                                <h3 class="package-card-title">Apo Reef, Mindoro</h3>
+                                <p class="package-card-desc">
+                                    The second largest contiguous coral reef system in the world, offering world class marine diving, sea turtle encounters, and crystal clear ocean waters.
+                                </p>
+                            </div>
+                            <div>
+                                <button class="btn-package-book">Book Now!</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SEA 3: Hundred Islands, Pangasinan -->
+                    <article class="package-card hidden" data-category="sea">
+                        <img src="../assets/images/dest-boracay.jpg" alt="Hundred Islands" class="package-card-img" />
+                        <div class="package-card-body">
+                            <div>
+                                <h3 class="package-card-title">Hundred Islands</h3>
+                                <p class="package-card-desc">
+                                    Charter an island hopping boat across one hundred mushroom shaped emerald isles, exploring sea caves, zip lines, and secluded sandbars.
+                                </p>
+                            </div>
+                            <div>
+                                <button class="btn-package-book">Book Now!</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="footer-section">
+        <div class="footer-pattern"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <i class="ph-fill ph-compass"></i>
+                        <span>ALS<span class="brand-light">Travel</span></span>
+                    </a>
+                    <p>Your ultimate gateway to seamless travel adventures across Air, Land, and Sea. We craft unforgettable journeys tailored just for you.</p>
+                    <div class="footer-social-links">
+                        <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Twitter"><i class="ph-fill ph-x-logo"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="travel.html">Travel</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#footer">Contact Support</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Get in Touch</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="ph-fill ph-envelope-simple"></i>
+                            <a href="mailto:travel@alstravel.com">travel@alstravel.com</a>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-phone"></i>
+                            <a href="tel:+1234567890">+1 (234) 567 890</a>
+                        </li>
+                        <li>
+                            <i class="ph-fill ph-map-pin"></i>
+                            <span>Imus Cavite, Philippines</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 ALS Traveling System. All rights reserved.</p>
+                <span>Designed for Exploration</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Client Script -->
+    <script src="../../src/js/client/main.js" defer></script>
+</body>
+</html>
